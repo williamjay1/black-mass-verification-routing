@@ -1,0 +1,12 @@
+policy,hub_id,city,route,blocks,capacity_tpy
+confirmation,H011,Dieuze,H,4,4000.0
+confirmation,H015,Harnes,H,1,1000.0
+confirmation,H029,Hilchenbach,D,12,12000.0
+confirmation,H029,Hilchenbach,P,1,1000.0
+confirmation,H031,Krefeld,H,5,5000.0
+confirmation,H061,Halmstad,H,2,2000.0
+cascade,H019,Saint-Quentin-Fallavier,H,5,5000.0
+cascade,H029,Hilchenbach,D,10,10000.0
+cascade,H029,Hilchenbach,P,1,1000.0
+cascade,H039,Sülzetal,H,6,6000.0
+cascade,H061,Halmstad,H,2,2000.0

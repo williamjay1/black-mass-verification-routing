@@ -1,0 +1,13 @@
+policy,p,maximum_lot_t,design_capacity_lot_t,repetitions,sample_overflow_share,overflow_count,maximum_process_input_t,reserved_capacity_tpy,simulation_role
+confirmation,0.2,10.0,0.0,4096,0.0,0,10355.210234295999,28000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+confirmation,0.5,10.0,0.0,4096,0.0,0,10267.505884556169,28000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+confirmation,0.8,10.0,0.0,4096,0.48583984375,1990,10159.44420606638,28000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+cascade,0.2,10.0,0.0,4096,0.0,0,10107.505884556169,25000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+cascade,0.5,10.0,0.0,4096,0.0,0,10117.505884556169,25000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+cascade,0.8,10.0,0.0,4096,0.163818359375,671,10077.50588455617,25000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+confirmation,0.2,10.0,10.0,4096,0.0,0,10365.0071495227,32000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+confirmation,0.5,10.0,10.0,4096,0.0,0,10247.505884556169,32000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+confirmation,0.8,10.0,10.0,4096,0.0,0,10149.689492237898,32000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+cascade,0.2,10.0,10.0,4096,0.0,0,10110.21105425079,31000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+cascade,0.5,10.0,10.0,4096,0.0,0,10117.505884556169,31000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"
+cascade,0.8,10.0,10.0,4096,0.0,0,10077.50588455617,31000.0,"conditional model check; independent lots/allocated channel sampling assumed, no empirical reliability estimate"

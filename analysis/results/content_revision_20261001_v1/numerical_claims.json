@@ -1,0 +1,102 @@
+{
+  "source_grade_audit": {
+    "article_doi": "10.1039/d6ra04652e",
+    "dataset_doi": "10.4121/58947ce2-c651-43cc-8e4d-760b2e60adfb",
+    "source_file_sha256": "78aac25c4ef318a3cfbedcf9fe5f965ee083ea551a7523b264f5c5e1f67cffe2",
+    "original_ods_sha256": "834a26bb3714c42744095346fff86081340672f1584a6f19414f0479e9b7f5c1",
+    "script_sha256": "989491752fd3777894dbf3ab5a8cef03620d73adb26c56a20b4e4cab499fbffe",
+    "article_online_date": "2026-08-18",
+    "raw_deposited_phase_count": 6,
+    "source_yield_denominator": "original metal in solids, corrected by220/500mL aliquot; original ODS A294:C294 formulas verified againstC97:E97andL160",
+    "original_feed_metals_g": {
+      "Co": 1.853919561386007,
+      "Ni": 4.857951009133634,
+      "Mn": 1.8678101872173445
+    },
+    "aliquot_fraction": 0.44,
+    "aliquot_equivalent_original_feed_metals_g": {
+      "Co": 0.8157246070098432,
+      "Ni": 2.137498444018799,
+      "Mn": 0.8218364823756316
+    },
+    "phase_7p98_impurity_pct": 0.6413360613067636,
+    "source_reported_weighted_impurity_pct": 0.4996892728241888,
+    "computed_high_phase_weighted_metal_impurity_pct": 0.499689272824189,
+    "rounding_warning": "Article rounds 0.641336% to0.6%; strict0.6% and rounded-label admission are different design rules. Neither is a universal battery-grade specification.",
+    "scope": "measured source purification products; no industrial scale-up, validated assay, EU prevalence, battery CAM qualification, or LCA credit inferred"
+  },
+  "annual_flow_results": [
+    {
+      "year": 2025,
+      "cell_waste_tpy": 13759.904783991831,
+      "reference_BM_tpy": 1824.0794534128033
+    },
+    {
+      "year": 2030,
+      "cell_waste_tpy": 75642.27859387288,
+      "reference_BM_tpy": 10027.505884556169
+    },
+    {
+      "year": 2035,
+      "cell_waste_tpy": 316090.3760462587,
+      "reference_BM_tpy": 41902.467307643645
+    },
+    {
+      "year": 2040,
+      "cell_waste_tpy": 755887.5285084663,
+      "reference_BM_tpy": 100204.10253473287
+    },
+    {
+      "year": 2050,
+      "cell_waste_tpy": 1507327.9466641464,
+      "reference_BM_tpy": 199818.6746367396
+    }
+  ],
+  "confirmation_saving_pct": 2.5577031031101454,
+  "cascade_saving_pct": 3.5357637638689074,
+  "cascade_extra_saving_per_t_vs_confirmation": 303.2339999999921,
+  "phasewise_0p65_to_0p6_CAM_ratio": 8.928913300056495,
+  "pooled_gain_vs_phasewise_0p6": 9.02465630880753,
+  "robust_pooled_gain_vs_robust_phasewise_0p6_10pct": 8.329747030532905,
+  "joint_boundary_10t_0p6": [
+    {
+      "maximum_lot_t": 10.0,
+      "kappa": 0.686012916460727,
+      "quality_limit_pct": 0.6,
+      "rule": "phasewise",
+      "relative_mass_interval": 0.0,
+      "normalized_TM_potential_per_input": 0.11199571172828757,
+      "certified_throughput_TM_potential_index": 0.07683050483381741
+    },
+    {
+      "maximum_lot_t": 10.0,
+      "kappa": 0.686012916460727,
+      "quality_limit_pct": 0.6,
+      "rule": "phasewise",
+      "relative_mass_interval": 0.1,
+      "normalized_TM_potential_per_input": 0.10079614055545881,
+      "certified_throughput_TM_potential_index": 0.06914745435043566
+    },
+    {
+      "maximum_lot_t": 10.0,
+      "kappa": 0.686012916460727,
+      "quality_limit_pct": 0.6,
+      "rule": "pooled",
+      "relative_mass_interval": 0.0,
+      "normalized_TM_potential_per_input": 1.0107228064080798,
+      "certified_throughput_TM_potential_index": 0.6933689001573776
+    },
+    {
+      "maximum_lot_t": 10.0,
+      "kappa": 0.686012916460727,
+      "quality_limit_pct": 0.6,
+      "rule": "pooled",
+      "relative_mass_interval": 0.1,
+      "normalized_TM_potential_per_input": 0.8396063524810105,
+      "certified_throughput_TM_potential_index": 0.5759808025444512
+    }
+  ],
+  "simulation_max_overflow_mean_only": 0.48583984375,
+  "simulation_max_overflow_certified": 0.0,
+  "verification_role": "solver/numerical/conditional probability checks, not empirical calibration"
+}

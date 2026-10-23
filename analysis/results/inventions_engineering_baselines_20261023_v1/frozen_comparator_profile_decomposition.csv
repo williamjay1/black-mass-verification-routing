@@ -1,0 +1,4 @@
+p,frozen_source_id,joint_source_id,frozen_original_capacity_tpy,joint_original_capacity_tpy,reservation_saving_model_usd,additional_transport_tkm,additional_transport_cost_model_usd,additional_processing_cost_model_usd,additional_assay_cost_model_usd,profile_saving_model_usd,is_frozen_worst_total_cost_profile,is_joint_worst_total_cost_profile
+0.2,premium:11,premium:17,31000.0,24000.0,3500000.0,596578.9674640135,298289.48373200675,0.0,0.0,3201710.5162679553,True,True
+0.5,premium:11,premium:17,31000.0,24000.0,3500000.0,1253761.7684806832,626880.8842403416,0.0,0.0,2873119.1157596707,False,False
+0.8,premium:11,premium:17,31000.0,24000.0,3500000.0,1910944.569497351,955472.2847486755,2.9802322387695312e-08,0.0,2544527.7152512968,False,False

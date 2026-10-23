@@ -1,0 +1,132 @@
+{
+  "generated_utc": "2026-10-23T07:44:27.969867+00:00",
+  "script": "F:\\SCI\\github_black_mass\\analysis\\scripts\\inventions_engineering_baselines.py",
+  "python": "3.12.10",
+  "numpy": "2.5.1",
+  "pandas": "3.0.5",
+  "inputs": [
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\datasets\\futuram_network_inputs_20260930_v1\\candidate_hubs.csv",
+      "sha256": "41f52c73c9710b83e4566a4ac2728dfa4d3e3dba6deaefe62417747a8a4676ca"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\datasets\\futuram_network_inputs_20260930_v1\\national_origin_hub_geodesic_matrix.csv",
+      "sha256": "fa0e20dfdb4a6de5430661e91427b3006dbe579a47de9f997269cf82c797b4f8"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\datasets\\futuram_network_inputs_20260930_v1\\national_origins_2030.csv",
+      "sha256": "481cb15547cdb42b771db0add16b192933995a189d6d3bbb3573fed38796a92c"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\results\\qualified_blending_20261001_v1\\grade_blending_frontier.csv",
+      "sha256": "03193057e6aaa771c88576a59cca648661d0ab0e0cd1f487946fcc3a850d0bc3"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\results\\qualified_product_mfa_20261001_v1\\measured_precipitate_phase_metal_masses.csv",
+      "sha256": "1b46736573973023021974021d011b85dab11f87aabe942aeaf42937b3df985b"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\results\\signal_capacity_20261001_v4\\capacity_all_runs.json",
+      "sha256": "15af0804c41cd2c612ac905020f574f17d87ddbad6e3c468bec03aa1ae03e43c"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\results\\signal_policy_export_20261001_v2\\smoke_all_runs.json",
+      "sha256": "6d2d370296b6280fbf09602da32ef30ab79455523b0f4a4b63a5bc832f95a0e5"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\results\\signal_reservation_premium_20261001_v1\\premium_all_runs.json",
+      "sha256": "f849b8c4dac0adf31daec423fafd30d202b31edd47cbfe054166a15ba39787ed"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\scripts\\inventions_engineering_baselines.py",
+      "sha256": "e87dda65a20218d88697046c4e79b3358afc5607258992044fd9f0d6f779627e"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\analysis\\scripts\\run_signal_contingent_network.py",
+      "sha256": "965ae756c862cc3dfe715a6c2a1509203625e9c3e114c29538e0abd1d9768abe"
+    },
+    {
+      "path": "F:\\SCI\\github_black_mass\\datasets\\upgrade\\route_parameter_registry_2026-09-26.csv",
+      "sha256": "7fa4e45101b22b45e98a42355d9a427091e018261e7abe1b3b6c0c3008aa447e"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "centralized_heuristic_best_by_DP_center.csv",
+      "sha256": "43e549d521ed43b7a4f1c50121091a48c255c8aa89fe06bf3769df43f59f7461"
+    },
+    {
+      "path": "centralized_heuristic_capacity.csv",
+      "sha256": "10db6888e7d34014b39bd2fce69a17f842095217b6adb694ffc4bb7944ae9ded"
+    },
+    {
+      "path": "centralized_heuristic_comparison.csv",
+      "sha256": "73e129b3a3651536650302b085366f7d71c2f40a42e7a2cd5dae8d9649f62fe5"
+    },
+    {
+      "path": "centralized_heuristic_policy_channels.csv",
+      "sha256": "e08ec81df21f4c470690fc8e490b1acba2954a22960a9f85018a5539cde76b82"
+    },
+    {
+      "path": "centralized_heuristic_profiles.csv",
+      "sha256": "4345f4f41bcf30973b0935641b288088c2c6c9c52dbb031a2618ed94678c8ce7"
+    },
+    {
+      "path": "fixed_routing_capacity_by_site.csv",
+      "sha256": "cc5c36d03fb4d940c77b95de575fc70f8956d125a2b2792f363e11599d8a547f"
+    },
+    {
+      "path": "fixed_routing_capacity_reblocking.csv",
+      "sha256": "fb5bca6e33a80928768ecd6c9bc54cb4ec8cfaf36be55830134e7acef1cab1cc"
+    },
+    {
+      "path": "fixed_routing_profile_costs.csv",
+      "sha256": "e35a271544a50c79c0e61ec58067695d0e3ada69a6c29468fe379f67bd531557"
+    },
+    {
+      "path": "frozen_comparator_profile_decomposition.csv",
+      "sha256": "bd8df0a0c65d27e04cf79b312df8baecf22eb2871631b4187aaf705e6c7e4005"
+    },
+    {
+      "path": "post_stoichiometry_impurity_removal_requirements.csv",
+      "sha256": "d3d10d0a53d43180839a9944e78a478e154991627bb39fa1293c426f676f0afe"
+    },
+    {
+      "path": "product_greedy_52_conditions.csv",
+      "sha256": "e0da1e23f29138fba3d0002fdb4d2dc3f3668978d7c146411c172c62fb37022d"
+    },
+    {
+      "path": "self_checks.json",
+      "sha256": "70777ffd83421efb3d6916b6f2ae7382ab127959266054123dd193cf021a47ce"
+    },
+    {
+      "path": "source_aggregate_52_conditions.csv",
+      "sha256": "7c383819c2a6e03caea35010a16d7d802b1ae3d84a651b5bbaef8f794faf46c0"
+    },
+    {
+      "path": "source_aggregate_delta_boundaries.csv",
+      "sha256": "cdc26ca84aa5773d5af3155a07e5108f10e513e7e78018f72cfa40a99359e70e"
+    },
+    {
+      "path": "summary.json",
+      "sha256": "82267f550c5890091f945da2131862aeb2d7135dfeb34abfcce732d0f9ad1711"
+    }
+  ],
+  "method_roles": {
+    "capacity": "fixed-routing minimum integer blocks under a total-capacity Bernstein sufficient bound, not routing reoptimization or exact chance constraints",
+    "module_sensitivity": "new module scenarios at fixed routing, independent b=10 t and h=500; source design lot and premium preserved separately",
+    "heuristic": "whole observed-signal lots sent to one selected DP hub or nearest selected H hub; same-hub P fallback; no latent-state/profile dispatch; no global optimality claim",
+    "products": "matched measured inventories and uncertainty design conditions; stoichiometric potential and impurity removal requirement, not manufactured CAM or validated purification"
+  },
+  "runtime_seconds": 3.260364399990067,
+  "write_scope": [
+    "F:\\SCI\\github_black_mass\\analysis\\scripts\\inventions_engineering_baselines.py",
+    "F:\\SCI\\github_black_mass\\analysis\\results\\inventions_engineering_baselines_20261023_v1"
+  ],
+  "optimization_calls": {
+    "MILP": 0,
+    "LP": 0
+  },
+  "candidate_location_role": "city options with unrestricted scenario D/H/P capability; no claim of verified plant capability",
+  "certificate_assumptions": "fixed annual workload; independent bounded lot outcomes; K=51 union allocation and Var<=b*mu; no guarantee under cross-lot common-mode dependence"
+}

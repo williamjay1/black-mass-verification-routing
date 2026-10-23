@@ -1,0 +1,4573 @@
+[
+  {
+    "config": {
+      "year": 2030,
+      "policy": "none",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": true,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 310888766.0442778,
+    "primary_lower_bound_model_usd": 310888756.04427785,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 0.0,
+    "signal_labels": [
+      "untested"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.8
+      ],
+      [
+        0.5
+      ],
+      [
+        0.19999999999999996
+      ]
+    ],
+    "direct_eligible_signals": [
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 310888766.0442778,
+        "assay_cost_model_usd": 0.0,
+        "transport_tkm": 3280969.1291310177,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 310888766.0442778,
+        "assay_cost_model_usd": 0.0,
+        "transport_tkm": 3280969.1291310177,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 310888766.0442778,
+        "assay_cost_model_usd": 0.0,
+        "transport_tkm": 3280969.1291310177,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "screen",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 312392891.9269612,
+    "primary_lower_bound_model_usd": 312392881.9269611,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 7.127631818093505e-14,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.41095890410958896,
+        0.9604519774011299
+      ],
+      [
+        0.1485148514851485,
+        0.8585858585858586
+      ],
+      [
+        0.041782729805013914,
+        0.602836879432624
+      ]
+    ],
+    "direct_eligible_signals": [
+      false,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 312392885.9938135,
+        "assay_cost_model_usd": 1504125.8826834254,
+        "transport_tkm": 3280957.262835812,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 312392888.96038735,
+        "assay_cost_model_usd": 1504125.8826834254,
+        "transport_tkm": 3280963.195983398,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 312392891.9269612,
+        "assay_cost_model_usd": 1504125.8826834254,
+        "transport_tkm": 3280969.129130984,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 302937154.42794245,
+    "primary_lower_bound_model_usd": 302937144.4279425,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 4.547473508864641e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 302937154.42794245,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.129131166,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 276067764.02855164,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280996.2165098423,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 249198373.62916082,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3281023.303888519,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10067.615908094394
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "cascade",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 299896473.708545,
+    "primary_lower_bound_model_usd": 299896463.708545,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 3.865352482534945e-12,
+    "signal_labels": [
+      "both_positive",
+      "screen_positive_confirm_negative",
+      "screen_negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.014475271411338964,
+        0.9318541996830427,
+        0.9604519774011299
+      ],
+      [
+        0.003658536585365854,
+        0.7736842105263156,
+        0.8585858585858586
+      ],
+      [
+        0.0009171507184347292,
+        0.46081504702194326,
+        0.602836879432624
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 299896473.708545,
+        "assay_cost_model_usd": 2821740.1559141055,
+        "transport_tkm": 3280969.1291312254,
+        "direct_admitted_t": 1662.5604756594128,
+        "direct_compatible_t": 1638.494461536478,
+        "false_positive_fallback_t": 24.066014122934806,
+        "hydro_primary_t": 8364.945408896758,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.50588455617,
+        "total_process_input_equivalent_t": 10051.571898679105
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 278910545.3946594,
+        "assay_cost_model_usd": 3782876.5949488147,
+        "transport_tkm": 3280963.112182047,
+        "direct_admitted_t": 4111.277412668029,
+        "direct_compatible_t": 4096.236153841195,
+        "false_positive_fallback_t": 15.041258826834254,
+        "hydro_primary_t": 5916.22847188814,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10042.547143383003
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 257924617.08077386,
+        "assay_cost_model_usd": 4744013.033983524,
+        "transport_tkm": 3280957.0952328686,
+        "direct_admitted_t": 6559.9943496766455,
+        "direct_compatible_t": 6553.977846145912,
+        "false_positive_fallback_t": 6.0165035307337,
+        "hydro_primary_t": 3467.5115348795234,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.50588455617,
+        "total_process_input_equivalent_t": 10033.522388086903
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "perfect",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 297692568.3002018,
+    "primary_lower_bound_model_usd": 297692558.3002019,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 0.0,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 297692568.3002018,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.129130969,
+        "direct_admitted_t": 2005.5011769112339,
+        "direct_compatible_t": 2005.5011769112339,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 8022.0047076449355,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 271129701.4620125,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280961.629131032,
+        "direct_admitted_t": 5013.752942278084,
+        "direct_compatible_t": 5013.752942278084,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 5013.752942278084,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 244566834.62382331,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280954.1291310964,
+        "direct_admitted_t": 8022.0047076449355,
+        "direct_compatible_t": 8022.0047076449355,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 2005.5011769112334,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "cascade",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.5,
+      "conservative_joint_s": true,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 301873075.613497,
+    "primary_lower_bound_model_usd": 301873065.61349684,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 3.979039320256561e-13,
+    "signal_labels": [
+      "both_positive",
+      "screen_positive_confirm_negative",
+      "screen_negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.05373831775700934,
+        0.9172185430463576,
+        0.9604519774011299
+      ],
+      [
+        0.01399878271454656,
+        0.7347480106100798,
+        0.8585858585858586
+      ],
+      [
+        0.003536829155774257,
+        0.409158050221566,
+        0.602836879432624
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 301873075.613497,
+        "assay_cost_model_usd": 2821740.1559141055,
+        "transport_tkm": 3280969.1291313106,
+        "direct_admitted_t": 1716.7090074360162,
+        "direct_compatible_t": 1624.4559532980998,
+        "false_positive_fallback_t": 92.25305413791675,
+        "hydro_primary_t": 8310.796877120152,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10119.758938694085
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 280378346.637276,
+        "assay_cost_model_usd": 3782876.5949488147,
+        "transport_tkm": 3280963.112182106,
+        "direct_admitted_t": 4118.7980420814465,
+        "direct_compatible_t": 4061.1398832452487,
+        "false_positive_fallback_t": 57.65815883619797,
+        "hydro_primary_t": 5908.7078424747215,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10085.164043392368
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 258883617.66105515,
+        "assay_cost_model_usd": 4744013.033983524,
+        "transport_tkm": 3280957.0952329026,
+        "direct_admitted_t": 6520.887076726877,
+        "direct_compatible_t": 6497.823813192399,
+        "false_positive_fallback_t": 23.063263534479184,
+        "hydro_primary_t": 3506.6188078292917,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.50588455617,
+        "total_process_input_equivalent_t": 10050.569148090648
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "cascade",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 1.0,
+      "conservative_joint_s": true,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 303725717.49070406,
+    "primary_lower_bound_model_usd": 303725707.4907039,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 2.473576898864849e-13,
+    "signal_labels": [
+      "both_positive",
+      "screen_positive_confirm_negative",
+      "screen_negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.08988764044943819,
+        0.9122807017543861,
+        0.9604519774011299
+      ],
+      [
+        0.024096385542168672,
+        0.7222222222222225,
+        0.8585858585858586
+      ],
+      [
+        0.006134969325153372,
+        0.3939393939393942,
+        0.602836879432624
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 303725717.49070406,
+        "assay_cost_model_usd": 2821740.1559141055,
+        "transport_tkm": 3280969.1291312864,
+        "direct_admitted_t": 1784.8960474509986,
+        "direct_compatible_t": 1624.4559532980998,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 8242.60983710517,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 281536264.1336119,
+        "assay_cost_model_usd": 3782876.5949488147,
+        "transport_tkm": 3280995.7583449637,
+        "direct_admitted_t": 4161.414942090811,
+        "direct_compatible_t": 4061.1398832452487,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5866.090942465358,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 259346810.7765198,
+        "assay_cost_model_usd": 4744013.033983524,
+        "transport_tkm": 3281022.387558642,
+        "direct_admitted_t": 6537.933836730624,
+        "direct_compatible_t": 6497.823813192399,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 3489.572047825546,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.50588455617,
+        "total_process_input_equivalent_t": 10067.615908094394
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.05,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 315401143.6923278,
+    "primary_lower_bound_model_usd": 315401133.6923279,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 5.684341886080802e-14,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      false,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 315401143.6923278,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.1291305134,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 315401143.6923278,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.12913056,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 315401143.6923278,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.1291306065,
+        "direct_admitted_t": 0.0,
+        "direct_compatible_t": 0.0,
+        "false_positive_fallback_t": 0.0,
+        "hydro_primary_t": 10027.505884556169,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "cascade",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.05,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 299896473.708545,
+    "primary_lower_bound_model_usd": 299896463.708545,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 3.865352482534945e-12,
+    "signal_labels": [
+      "both_positive",
+      "screen_positive_confirm_negative",
+      "screen_negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.014475271411338964,
+        0.9318541996830427,
+        0.9604519774011299
+      ],
+      [
+        0.003658536585365854,
+        0.7736842105263156,
+        0.8585858585858586
+      ],
+      [
+        0.0009171507184347292,
+        0.46081504702194326,
+        0.602836879432624
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 299896473.708545,
+        "assay_cost_model_usd": 2821740.1559141055,
+        "transport_tkm": 3280969.1291312254,
+        "direct_admitted_t": 1662.5604756594128,
+        "direct_compatible_t": 1638.494461536478,
+        "false_positive_fallback_t": 24.066014122934806,
+        "hydro_primary_t": 8364.945408896758,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.50588455617,
+        "total_process_input_equivalent_t": 10051.571898679105
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 278910545.3946594,
+        "assay_cost_model_usd": 3782876.5949488147,
+        "transport_tkm": 3280963.112182047,
+        "direct_admitted_t": 4111.277412668029,
+        "direct_compatible_t": 4096.236153841195,
+        "false_positive_fallback_t": 15.041258826834254,
+        "hydro_primary_t": 5916.22847188814,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10042.547143383003
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 257924617.08077386,
+        "assay_cost_model_usd": 4744013.033983524,
+        "transport_tkm": 3280957.0952328686,
+        "direct_admitted_t": 6559.9943496766455,
+        "direct_compatible_t": 6553.977846145912,
+        "false_positive_fallback_t": 6.0165035307337,
+        "hydro_primary_t": 3467.5115348795234,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.50588455617,
+        "total_process_input_equivalent_t": 10033.522388086903
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 1000,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 308452282.6644484,
+    "primary_lower_bound_model_usd": 308452272.6644483,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 4.547473508864641e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 308452282.6644484,
+        "assay_cost_model_usd": 10027505.884556169,
+        "transport_tkm": 3280969.129131166,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 281582892.26505756,
+        "assay_cost_model_usd": 10027505.884556169,
+        "transport_tkm": 3280996.2165098423,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 254713501.86566672,
+        "assay_cost_model_usd": 10027505.884556169,
+        "transport_tkm": 3281023.303888519,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10067.615908094394
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "cascade",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 1000,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 301506891.15360475,
+    "primary_lower_bound_model_usd": 301506881.1536047,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 0.0,
+    "signal_labels": [
+      "both_positive",
+      "screen_positive_confirm_negative",
+      "screen_negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.014475271411338964,
+        0.9318541996830427,
+        0.9604519774011299
+      ],
+      [
+        0.003658536585365854,
+        0.7736842105263156,
+        0.8585858585858586
+      ],
+      [
+        0.0009171507184347292,
+        0.46081504702194326,
+        0.602836879432624
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 301506891.15360475,
+        "assay_cost_model_usd": 4432157.600973827,
+        "transport_tkm": 3280969.129131113,
+        "direct_admitted_t": 1662.5604756594128,
+        "direct_compatible_t": 1638.494461536478,
+        "false_positive_fallback_t": 24.066014122934806,
+        "hydro_primary_t": 8364.945408896756,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10051.571898679103
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 281695702.29567826,
+        "assay_cost_model_usd": 6568016.354384291,
+        "transport_tkm": 3280997.3953488423,
+        "direct_admitted_t": 4111.277412668029,
+        "direct_compatible_t": 4096.236153841195,
+        "false_positive_fallback_t": 15.041258826834254,
+        "hydro_primary_t": 5916.22847188814,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10042.547143383003
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 261884513.43775195,
+        "assay_cost_model_usd": 8703875.107794756,
+        "transport_tkm": 3281025.6615665723,
+        "direct_admitted_t": 6559.9943496766455,
+        "direct_compatible_t": 6553.977846145912,
+        "false_positive_fallback_t": 6.0165035307337,
+        "hydro_primary_t": 3467.5115348795234,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.50588455617,
+        "total_process_input_equivalent_t": 10033.522388086903
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 0.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 299405867.9556373,
+    "primary_lower_bound_model_usd": 299405857.9556373,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 3.410605131648481e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 299405867.9556373,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.129131322,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 273860704.3865739,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280985.022936008,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 248315540.81751058,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3281000.916740694,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10067.615908094394
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 0.5,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 301171511.1917898,
+    "primary_lower_bound_model_usd": 301171501.1917899,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 4.263256414560601e-14,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 301171511.1917898,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.1291312007,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 274964237.00595623,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280996.216509924,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 248756962.82012272,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3281023.3038886474,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10067.615908094394
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 0.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 302937154.4279424,
+    "primary_lower_bound_model_usd": 302937144.4279425,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 9.57456336436735e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 302937154.4279424,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.129130971,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 276067746.9710083,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280962.1014232216,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 249198339.5140743,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280955.073715473,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10027.505884556169
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 0.5,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 302937154.4279425,
+    "primary_lower_bound_model_usd": 302937144.4279425,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 9.947598300641403e-14,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 302937154.4279425,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.12913117,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10107.725931632618
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 276067764.02855164,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280996.2165098526,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10077.64341397895
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 249198373.62916085,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3281023.303888535,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10047.560896325282
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.3,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 303429296.7973121,
+    "primary_lower_bound_model_usd": 303429286.7973122,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 0.0,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 303429296.7973121,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 4265253.867870467,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 276559906.39792126,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 4265280.955249088,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 249690515.99853042,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 4265308.04262771,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10067.615908094394
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.6,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 303921439.16668177,
+    "primary_lower_bound_model_usd": 303921429.16668177,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 4.547473508864641e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 303921439.16668177,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 5249538.60660976,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 277052048.7672909,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 5249565.693988315,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 250182658.36789995,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 5249592.781366871,
+        "direct_admitted_t": 7661.014495800913,
+        "direct_compatible_t": 7620.904472262689,
+        "false_positive_fallback_t": 40.11002353822467,
+        "hydro_primary_t": 2366.4913887552557,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10067.615908094394
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2025,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 55155018.297685765,
+    "primary_lower_bound_model_usd": 55155008.29768576,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 1.0619283230539621e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 55155018.297685765,
+        "assay_cost_model_usd": 820835.7540357616,
+        "transport_tkm": 693732.9588043587,
+        "direct_admitted_t": 375.7603674030376,
+        "direct_compatible_t": 346.57509614843275,
+        "false_positive_fallback_t": 29.18527125460486,
+        "hydro_primary_t": 1448.3190860097661,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 1824.0794534128036,
+        "total_terminal_input_equivalent_t": 1824.0794534128038,
+        "total_process_input_equivalent_t": 1853.2647246674087
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 50267283.26039373,
+        "assay_cost_model_usd": 820835.7540357616,
+        "transport_tkm": 693760.0461829904,
+        "direct_admitted_t": 884.6785349052099,
+        "direct_compatible_t": 866.4377403710818,
+        "false_positive_fallback_t": 18.24079453412804,
+        "hydro_primary_t": 939.4009185075938,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 1824.0794534128036,
+        "total_terminal_input_equivalent_t": 1824.0794534128038,
+        "total_process_input_equivalent_t": 1842.3202479469317
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 45379548.2231017,
+        "assay_cost_model_usd": 820835.7540357616,
+        "transport_tkm": 693787.1335616222,
+        "direct_admitted_t": 1393.596702407382,
+        "direct_compatible_t": 1386.300384593731,
+        "false_positive_fallback_t": 7.296317813651214,
+        "hydro_primary_t": 430.4827510054216,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 1824.0794534128036,
+        "total_terminal_input_equivalent_t": 1824.0794534128038,
+        "total_process_input_equivalent_t": 1831.3757712264553
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2035,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 1265488274.4027429,
+    "primary_lower_bound_model_usd": 1265488264.4027426,
+    "primary_mip_gap": 1.7967268590241956e-16,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 2.7000623958883807e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 1265488274.4027429,
+        "assay_cost_model_usd": 18856110.28843964,
+        "transport_tkm": 12888002.321256047,
+        "direct_admitted_t": 8631.908265374592,
+        "direct_compatible_t": 7961.468788452293,
+        "false_positive_fallback_t": 670.4394769222984,
+        "hydro_primary_t": 33270.55904226906,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 41902.467307643645,
+        "total_terminal_input_equivalent_t": 41902.46730764365,
+        "total_process_input_equivalent_t": 42572.90678456595
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 1153207693.62289,
+        "assay_cost_model_usd": 18856110.28843964,
+        "transport_tkm": 12888029.408635577,
+        "direct_admitted_t": 20322.696644207168,
+        "direct_compatible_t": 19903.67197113073,
+        "false_positive_fallback_t": 419.02467307643644,
+        "hydro_primary_t": 21579.770663436477,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 41902.467307643645,
+        "total_terminal_input_equivalent_t": 41902.467307643645,
+        "total_process_input_equivalent_t": 42321.49198072008
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 1040927112.8430368,
+        "assay_cost_model_usd": 18856110.28843964,
+        "transport_tkm": 12888056.49601511,
+        "direct_admitted_t": 32013.485023039746,
+        "direct_compatible_t": 31845.87515380917,
+        "false_positive_fallback_t": 167.60986923057456,
+        "hydro_primary_t": 9888.982284603899,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 41902.467307643645,
+        "total_terminal_input_equivalent_t": 41902.467307643645,
+        "total_process_input_equivalent_t": 42070.07717687422
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 9,
+        "capacity_tpy": 9000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 9,
+        "capacity_tpy": 9000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 15,
+        "capacity_tpy": 15000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 15,
+        "capacity_tpy": 15000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 6,
+        "capacity_tpy": 6000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 6,
+        "capacity_tpy": 6000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2040,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 3026244937.286252,
+    "primary_lower_bound_model_usd": 3026244927.2862525,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 6.548361852765083e-11,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 3026244937.286252,
+        "assay_cost_model_usd": 45091846.140629776,
+        "transport_tkm": 30820528.686167173,
+        "direct_admitted_t": 20642.04512215496,
+        "direct_compatible_t": 19038.77948159923,
+        "false_positive_fallback_t": 1603.2656405557248,
+        "hydro_primary_t": 79562.0574125779,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 100204.10253473284,
+        "total_terminal_input_equivalent_t": 100204.10253473285,
+        "total_process_input_equivalent_t": 101807.36817528858
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 2757741043.800947,
+        "assay_cost_model_usd": 45091846.140629776,
+        "transport_tkm": 30820555.77354692,
+        "direct_admitted_t": 48598.989729345405,
+        "direct_compatible_t": 47596.948703998074,
+        "false_positive_fallback_t": 1002.041025347328,
+        "hydro_primary_t": 51605.11280538742,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 100204.10253473284,
+        "total_terminal_input_equivalent_t": 100204.10253473283,
+        "total_process_input_equivalent_t": 101206.14356008015
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 2489237150.3156424,
+        "assay_cost_model_usd": 45091846.140629776,
+        "transport_tkm": 30820582.86092667,
+        "direct_admitted_t": 76555.93433653585,
+        "direct_compatible_t": 76155.11792639692,
+        "false_positive_fallback_t": 400.81641013893113,
+        "hydro_primary_t": 23648.168198196952,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 100204.10253473284,
+        "total_terminal_input_equivalent_t": 100204.1025347328,
+        "total_process_input_equivalent_t": 100604.91894487174
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 21,
+        "capacity_tpy": 21000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 22,
+        "capacity_tpy": 22000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 7,
+        "capacity_tpy": 7000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 8,
+        "capacity_tpy": 8000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 36,
+        "capacity_tpy": 36000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 37,
+        "capacity_tpy": 37000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 11,
+        "capacity_tpy": 11000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 11,
+        "capacity_tpy": 11000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2050,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": false
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 6042912618.431299,
+    "primary_lower_bound_model_usd": 6042912608.4313,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 0.0,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 6042912618.431299,
+        "assay_cost_model_usd": 89918403.5865328,
+        "transport_tkm": 77913810.49538407,
+        "direct_admitted_t": 41162.64697516836,
+        "direct_compatible_t": 37965.54818098052,
+        "false_positive_fallback_t": 3197.098794187834,
+        "hydro_primary_t": 158656.02766157125,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 199818.67463673957,
+        "total_terminal_input_equivalent_t": 199818.6746367396,
+        "total_process_input_equivalent_t": 203015.77343092742
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 5507484505.978617,
+        "assay_cost_model_usd": 89918403.5865328,
+        "transport_tkm": 77913837.58275509,
+        "direct_admitted_t": 96912.0571988187,
+        "direct_compatible_t": 94913.8704524513,
+        "false_positive_fallback_t": 1998.186746367396,
+        "hydro_primary_t": 102906.6174379209,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 199818.67463673957,
+        "total_terminal_input_equivalent_t": 199818.6746367396,
+        "total_process_input_equivalent_t": 201816.861383107
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 4972056393.525933,
+        "assay_cost_model_usd": 89918403.5865328,
+        "transport_tkm": 77913864.67012613,
+        "direct_admitted_t": 152661.46742246905,
+        "direct_compatible_t": 151862.19272392208,
+        "false_positive_fallback_t": 799.2746985469582,
+        "hydro_primary_t": 47157.207214270544,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 199818.67463673957,
+        "total_terminal_input_equivalent_t": 199818.6746367396,
+        "total_process_input_equivalent_t": 200617.94933528657
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 49,
+        "capacity_tpy": 49000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 51,
+        "capacity_tpy": 51000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 29,
+        "capacity_tpy": 29000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 30,
+        "capacity_tpy": 30000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 56,
+        "capacity_tpy": 56000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 59,
+        "capacity_tpy": 59000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 7,
+        "capacity_tpy": 7000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 7,
+        "capacity_tpy": 7000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 14,
+        "capacity_tpy": 14000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 15,
+        "capacity_tpy": 15000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "one dispatch tensor shared across profiles"
+  },
+  {
+    "config": {
+      "year": 2030,
+      "policy": "confirmation",
+      "p_low": 0.2,
+      "p_high": 0.8,
+      "risk_cap": 0.1,
+      "screen_s": 0.86,
+      "screen_f": 0.15,
+      "confirm_s": 0.95,
+      "confirm_f": 0.02,
+      "screen_fee": 150.0,
+      "confirm_fee": 450.0,
+      "bad_error_dependence": 0.0,
+      "conservative_joint_s": false,
+      "sunk_cost_fraction": 1.0,
+      "failed_direct_capacity_fraction": 1.0,
+      "fallback_cost_multiplier": 1.0,
+      "distance_multiplier": 1.0,
+      "transport_per_tkm": 0.5,
+      "max_hubs": 5,
+      "block_tpy": 1000.0,
+      "blocks_per_route_site": 100,
+      "force_hydro": false,
+      "oracle_dispatch": true
+    },
+    "status": "computed",
+    "primary_optimal": true,
+    "primary_solver_status": 0,
+    "worst_cost_model_usd": 302937154.4279426,
+    "primary_lower_bound_model_usd": 302937144.4279426,
+    "primary_mip_gap": 0.0,
+    "decision_cost_tolerance_model_usd": 10.0,
+    "capacity_tie_break_status": 0,
+    "capacity_tie_break_gap": 0.0,
+    "max_constraint_violation": 3.410605131648481e-13,
+    "signal_labels": [
+      "positive",
+      "negative"
+    ],
+    "posterior_risk_by_profile": [
+      [
+        0.07766990291262135,
+        0.9874055415617128
+      ],
+      [
+        0.020618556701030927,
+        0.9514563106796116
+      ],
+      [
+        0.005235602094240836,
+        0.830508474576271
+      ]
+    ],
+    "direct_eligible_signals": [
+      true,
+      false
+    ],
+    "scenarios": [
+      {
+        "p_compatible": 0.2,
+        "total_cost_model_usd": 302937154.4279426,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 3280969.129131246,
+        "direct_admitted_t": 2065.6662122185708,
+        "direct_compatible_t": 1905.2261180656722,
+        "false_positive_fallback_t": 160.4400941528987,
+        "hydro_primary_t": 7961.839672337598,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10187.945978709067
+      },
+      {
+        "p_compatible": 0.5,
+        "total_cost_model_usd": 278652748.8144252,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 8450965.788256887,
+        "direct_admitted_t": 4863.3403540097415,
+        "direct_compatible_t": 4763.06529516418,
+        "false_positive_fallback_t": 100.27505884556169,
+        "hydro_primary_t": 5164.165530546427,
+        "pyro_primary_t": 0.0,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556169,
+        "total_process_input_equivalent_t": 10127.78094340173
+      },
+      {
+        "p_compatible": 0.8,
+        "total_cost_model_usd": 282223516.11713403,
+        "assay_cost_model_usd": 4512377.648050276,
+        "transport_tkm": 7420121.543040708,
+        "direct_admitted_t": 5000.0,
+        "direct_compatible_t": 4973.821989528796,
+        "false_positive_fallback_t": 26.178010471204182,
+        "hydro_primary_t": 3484.7950626786946,
+        "pyro_primary_t": 1542.7108218774747,
+        "unique_input_t": 10027.505884556169,
+        "total_terminal_input_equivalent_t": 10027.505884556167,
+        "total_process_input_equivalent_t": 10053.683895027372
+      }
+    ],
+    "capacity": [
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "H",
+        "blocks": 3,
+        "capacity_tpy": 3000.0
+      },
+      {
+        "hub_id": "H019",
+        "city": "Saint-Quentin-Fallavier",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H035",
+        "city": "Munich",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "H",
+        "blocks": 4,
+        "capacity_tpy": 4000.0
+      },
+      {
+        "hub_id": "H039",
+        "city": "S\u00fclzetal",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "H",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H049",
+        "city": "Rotterdam",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "D",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "H",
+        "blocks": 2,
+        "capacity_tpy": 2000.0
+      },
+      {
+        "hub_id": "H061",
+        "city": "Halmstad",
+        "route": "P",
+        "blocks": 1,
+        "capacity_tpy": 1000.0
+      }
+    ],
+    "active_hubs": [
+      "H019",
+      "H035",
+      "H039",
+      "H049",
+      "H061"
+    ],
+    "policy_invariance": "nonimplementable latent-profile oracle benchmark"
+  }
+]

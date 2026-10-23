@@ -1,0 +1,9 @@
+policy,design_lot_t,reservation_premium,maximum_certified_campaign_mass_t,network_budget,certificate_constraints
+confirmation,0.0,0.0,0.0,0.1,51
+cascade,0.0,0.0,0.31279689712404224,0.1,51
+confirmation,10.0,0.0,30.977635409930596,0.1,51
+cascade,10.0,0.0,27.303170612394908,0.1,51
+confirmation,50.0,0.0,157.77152646716783,0.1,51
+cascade,50.0,0.0,156.24341973410725,0.1,51
+confirmation,10.0,500.0,9.999999999985258,0.1,51
+cascade,10.0,500.0,9.999999999985267,0.1,51

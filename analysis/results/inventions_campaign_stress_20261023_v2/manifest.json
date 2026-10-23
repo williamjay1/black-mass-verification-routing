@@ -1,0 +1,16 @@
+{
+  "role": "conditional computational stress test; no measured quality covariance or plant reliability",
+  "dependence": "identical complete quality/outcome/dispatch channel within a campaign; independent campaigns",
+  "seed": 34034,
+  "repetitions_per_cell": 4096,
+  "cells": 280,
+  "python": "3.12.10",
+  "numpy": "2.5.1",
+  "input_sha256": {
+    "results\\signal_policy_export_20261001_v2\\smoke_all_runs.json": "6d2d370296b6280fbf09602da32ef30ab79455523b0f4a4b63a5bc832f95a0e5",
+    "results\\signal_capacity_20261001_v4\\capacity_all_runs.json": "15af0804c41cd2c612ac905020f574f17d87ddbad6e3c468bec03aa1ae03e43c",
+    "results\\signal_reservation_premium_20261001_v1\\premium_all_runs.json": "f849b8c4dac0adf31daec423fafd30d202b31edd47cbfe054166a15ba39787ed"
+  },
+  "formula": "b_max=min_(profile,occupied site route) (C-mu)^2/[log(51/eps)*(2mu+2(C-mu)/3)]",
+  "limits": "Conservative sufficient bound; exceeding it is not proof of infeasibility. Zero simulated overflow is not zero risk."
+}

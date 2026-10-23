@@ -1,0 +1,93 @@
+{
+  "generated_utc": "2026-09-30T18:57:08.656665+00:00",
+  "script_sha256": "965ae756c862cc3dfe715a6c2a1509203625e9c3e114c29538e0abd1d9768abe",
+  "inputs": [
+    {
+      "path": "D:\\MLWork\\topic34\\datasets\\upgrade\\route_parameter_registry_2026-09-26.csv",
+      "sha256": "7fa4e45101b22b45e98a42355d9a427091e018261e7abe1b3b6c0c3008aa447e"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\national_origin_hub_geodesic_matrix.csv",
+      "sha256": "fa0e20dfdb4a6de5430661e91427b3006dbe579a47de9f997269cf82c797b4f8"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\candidate_hubs.csv",
+      "sha256": "41f52c73c9710b83e4566a4ac2728dfa4d3e3dba6deaefe62417747a8a4676ca"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\input_manifest.json",
+      "sha256": "99d3b3169833f984f594d58f030d38c4b81a20a59b8995f0810559ff52f8c527"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\national_origins_2025.csv",
+      "sha256": "80d15877aa6006662450b7daca56841717f5d718d1e8620af493cb79e0bf148d"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\national_origins_2030.csv",
+      "sha256": "481cb15547cdb42b771db0add16b192933995a189d6d3bbb3573fed38796a92c"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\national_origins_2035.csv",
+      "sha256": "18172349255bec9b6846f2532c90c9a36588e75bc50c4a1fab3b5909b9d82900"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\national_origins_2040.csv",
+      "sha256": "cdfd81019f6e26c84a3dc716bfa6032ccb8fe3ede72e8cec8bd3ed91d89e8259"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\futuram_network_inputs_20260930_v1\\national_origins_2050.csv",
+      "sha256": "4935922ca0cd1165b40746ecaaa72b32eec91371b1253117cf021a3c95efb690"
+    }
+  ],
+  "python": "3.12.10",
+  "scipy": "1.18.0",
+  "run_mode": "premium",
+  "exploratory_uncertainty": {
+    "designed_sample_count": 16384,
+    "seed": 3401,
+    "distribution": "Independent uniform analyst-defined hypercube; not EU empirical probability or confidence interval",
+    "bounds": {
+      "p": [
+        0.05,
+        0.95
+      ],
+      "s": [
+        0.8,
+        0.99
+      ],
+      "f": [
+        0.002,
+        0.2
+      ],
+      "fee": [
+        100,
+        1500
+      ],
+      "alpha": [
+        0,
+        1
+      ],
+      "direct_cost_scale": [
+        0.7,
+        1.3
+      ],
+      "fallback_cost_scale": [
+        0.7,
+        1.3
+      ]
+    },
+    "share_risk_admissible": 0.54791259765625,
+    "share_admissible_and_beneficial": 0.52362060546875,
+    "negative_value_given_admissible_share": 0.04433552411718837
+  },
+  "source_vs_scenario": "FutuRaM flows are published modeled public data. Costs are source case values. All compatibility fractions, classifier parameters, test fees, block capacities, distance inflation and failure penalties are designed scenarios.",
+  "excluded_claims": [
+    "validated instrument performance",
+    "EU plant prices",
+    "empirical compatibility shares",
+    "actual capacity investment",
+    "ISO comparative LCA",
+    "actual qualified CAM output",
+    "policy compliance"
+  ]
+}

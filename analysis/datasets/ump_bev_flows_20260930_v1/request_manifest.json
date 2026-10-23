@@ -1,0 +1,1014 @@
+{
+  "created_utc": "2026-09-30T12:09:13.631048+00:00",
+  "python": "3.12.10",
+  "raw_directory": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1",
+  "output_directory": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\ump_bev_flows_20260930_v1",
+  "data_kind": "modelled potential BEV battery-pack waste generation",
+  "unit": "t/year (website chart label)",
+  "spatial_scope": "EU-27 (explicit country ISO3 list)",
+  "application_filter": [
+    "BATTinELV_BEV_25kWh",
+    "BATTinELV_BEV_45kWh",
+    "BATTinELV_BEV_60kWh",
+    "BATTinELV_BEV_80kWh",
+    "BATTinELV_BEV_100kWh"
+  ],
+  "chemistry_scope": "lithium-based rechargeable family; no NMC/LFP split",
+  "scenario": "BAU",
+  "source": "https://www.urbanmineplatform.eu/waste-stream/batteries/charts",
+  "related_dataset_doi": "10.5281/zenodo.21128664",
+  "related_dataset_version": "V2 (2026-07-02)",
+  "api_zenodo_identity": "not verified; live service snapshot used explicitly",
+  "related_dataset_license": "CC BY 4.0; API terms to be checked before redistribution",
+  "requests": [
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:13.631048+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/lexique/getCountry",
+      "method": "GET",
+      "request_json": null,
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\metadata_countries.json",
+      "bytes": 1042,
+      "sha256": "8ab6095e36d119af62eabc7f94f754ed97543b35f9eb85bd66b44e8b8e417765"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:15.141150+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/lexique/getSubCategories?wasteStream=BATTERIES",
+      "method": "GET",
+      "request_json": null,
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\metadata_applications.json",
+      "bytes": 1728,
+      "sha256": "316099a9c404c21e8cc3150f005d637b9f06acef96d10b0747a5c4f00e50d8b9"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:15.530888+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "AUT"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_AUT.json",
+      "bytes": 3253,
+      "sha256": "a6b96b3f3729343d2959f0ded1efef22502dd031ffbcbc4de85b1877d1739395"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:16.553914+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "BEL"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_BEL.json",
+      "bytes": 3186,
+      "sha256": "b4d0e3ee2662e8666b771d175862f2bdf12707008b4b34799694e0aea8bc97e2"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:17.582333+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "BGR"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_BGR.json",
+      "bytes": 2336,
+      "sha256": "183c22eed10e1845cd46907b5b3306caa4c1d025b4f68a4fd7cf8ebf7647f757"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:18.586906+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "HRV"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_HRV.json",
+      "bytes": 3282,
+      "sha256": "3b55d3d9fc5a4b0dac260461f552139a0cce6e0509da5e68d70e017dabb9ccc2"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:19.616162+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "CYP"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_CYP.json",
+      "bytes": 3200,
+      "sha256": "3bcc5e88f64c31ebea826b6e32f72528f7a5dfd63bce1c694686254eb8548055"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:20.673345+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "CZE"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_CZE.json",
+      "bytes": 3177,
+      "sha256": "94e080c1e3e8a0c5d74ed5ef85c5fcb75dc9379c89c79952c05c408574925a37"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:21.700531+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "DNK"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_DNK.json",
+      "bytes": 3183,
+      "sha256": "333265160586627f065776cbf261d935c61987e2df20546e3213b2d57c082cf0"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:22.802183+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "EST"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_EST.json",
+      "bytes": 3261,
+      "sha256": "4eb66f061a3c72bda76de587267198eb9cfe3e3f05a0a46cfe75f14407f64e78"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:23.956020+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "FIN"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_FIN.json",
+      "bytes": 3276,
+      "sha256": "49065b257d1ef1b70b56617fe40745e26481eda7b9a9901b8e91d3148665bc2d"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:24.992656+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "FRA"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_FRA.json",
+      "bytes": 3281,
+      "sha256": "cba65382cedfe36cb408f2998ca48e57dd37bd2a3467aa8ef894a8bfea17abeb"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:26.013237+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "DEU"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_DEU.json",
+      "bytes": 3290,
+      "sha256": "23836a946e760aa46daaf9d123101d167e45b1f4fc6ded00bc401dc72009867e"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:27.022491+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "GRC"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_GRC.json",
+      "bytes": 3090,
+      "sha256": "615f867a56d75ecf3675b8d3d7db52f02c447c921b09de3a876c43d2a86a9352"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:28.022761+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "HUN"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_HUN.json",
+      "bytes": 3243,
+      "sha256": "060e026bdee54126f67e42f117893357134c399f9c3e959ed30649844734221e"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:29.050088+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "IRL"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_IRL.json",
+      "bytes": 3193,
+      "sha256": "9893766cc2a33f9160bea246ebd203bce22708e00ce7d96a2a1db68ce22c4452"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:30.062510+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "ITA"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_ITA.json",
+      "bytes": 3305,
+      "sha256": "cbc1fabedaae2164b03d812f2aa57335c5b89d3b0f9b0413ddc81f05de5108a2"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:31.072163+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "LVA"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_LVA.json",
+      "bytes": 2631,
+      "sha256": "3656eed3df6f74f9e5dd6032633bbdf89f69e726fc99fc1608d421197501e32d"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:32.097720+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "LTU"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_LTU.json",
+      "bytes": 2809,
+      "sha256": "85be6387c1c267dfef4f372530b7ec71e5ad3c972d0ca7f8cf24cb8c3eb1e70c"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:33.115502+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "LUX"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_LUX.json",
+      "bytes": 2468,
+      "sha256": "6e49a55e4648e620c2b60797486d3eb96210c496049e365093e5b9b89b09805e"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:34.125493+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "MLT"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_MLT.json",
+      "bytes": 3087,
+      "sha256": "e377730dedb300be00bc8f73b8e7ce9bc57b595579934884c6299b06f9f097e4"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:35.141156+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "NLD"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_NLD.json",
+      "bytes": 3195,
+      "sha256": "6e520228a5fa068f173e874b341418cc87428549ce86721a2fb5b1487b4c58ac"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:36.164188+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "POL"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_POL.json",
+      "bytes": 3294,
+      "sha256": "1daeb88595483fafd6519a5a729e0e537c904f52d85d7502b8e95d5b3e730281"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:37.172448+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "PRT"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_PRT.json",
+      "bytes": 3275,
+      "sha256": "487e7560563a2327c02767531996d2dba0c156ca3a06abb662636c3a30cc4cd5"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:38.182173+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "ROU"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_ROU.json",
+      "bytes": 3275,
+      "sha256": "ae326ff054628369a4a2c1ecf092dc22188a4c160235663adc086be64185b44d"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:39.208103+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "SVK"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_SVK.json",
+      "bytes": 2314,
+      "sha256": "2ed9eb258fbf60d52d6d500a42bf25263d4215c2490bc1b3661b936384f3b4ae"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:40.226768+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "SVN"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_SVN.json",
+      "bytes": 2451,
+      "sha256": "595fd4dd173f11abd5aae37fecae170decf3416db873b635b7d8feb6632b6755"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:41.295367+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "ESP"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_ESP.json",
+      "bytes": 3268,
+      "sha256": "6c01f0394319ff8241bdee35dca915840c24c2cbe7a36761c0c78c147a4b3807"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:42.318754+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "SWE"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_SWE.json",
+      "bytes": 3265,
+      "sha256": "fabd8a254f342f2180b3e950f720e3cc7d51f72b7f2a7b895b8d605bbc36f261"
+    },
+    {
+      "retrieved_at_utc": "2026-09-30T12:09:43.334679+00:00",
+      "url": "https://www.urbanmineplatform.eu/api/batteries/stacked-column/BATTERIES_GENERATED",
+      "method": "POST",
+      "request_json": {
+        "idScenario": "BAU",
+        "idLocations": [
+          "AUT",
+          "BEL",
+          "BGR",
+          "HRV",
+          "CYP",
+          "CZE",
+          "DNK",
+          "EST",
+          "FIN",
+          "FRA",
+          "DEU",
+          "GRC",
+          "HUN",
+          "IRL",
+          "ITA",
+          "LVA",
+          "LTU",
+          "LUX",
+          "MLT",
+          "NLD",
+          "POL",
+          "PRT",
+          "ROU",
+          "SVK",
+          "SVN",
+          "ESP",
+          "SWE"
+        ],
+        "idSubCategorys": [
+          "BATTinELV_BEV_25kWh",
+          "BATTinELV_BEV_45kWh",
+          "BATTinELV_BEV_60kWh",
+          "BATTinELV_BEV_80kWh",
+          "BATTinELV_BEV_100kWh"
+        ],
+        "idProducts": [
+          "battLiRechargeable"
+        ],
+        "idComponents": [],
+        "idMaterials": [],
+        "idElements": [],
+        "isOrdered": false
+      },
+      "http_status": 200,
+      "content_type": "application/json",
+      "etag": null,
+      "last_modified": null,
+      "raw_path": "F:\\AcademicData\\topic34\\raw\\ump_bev_flows_20260930_v1\\BAU_BEV_EU27_check.json",
+      "bytes": 3487,
+      "sha256": "cea70d82058f5db957c01035175de630401edfd650ee1a4f3977bba4d60b9c60"
+    }
+  ],
+  "errors": [
+    {
+      "key": "BGR",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 30\")"
+    },
+    {
+      "key": "CYP",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 40\")"
+    },
+    {
+      "key": "GRC",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 40\")"
+    },
+    {
+      "key": "LVA",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 33\")"
+    },
+    {
+      "key": "LTU",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 35\")"
+    },
+    {
+      "key": "LUX",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 31\")"
+    },
+    {
+      "key": "MLT",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 39\")"
+    },
+    {
+      "key": "SVK",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 30\")"
+    },
+    {
+      "key": "SVN",
+      "error": "ValueError(\"Expected 41 annual records, received <class 'list'> / 32\")"
+    }
+  ],
+  "country_count_acquired": 18,
+  "aggregate_max_abs_difference_t": 27922.067846375983,
+  "complete": false
+}

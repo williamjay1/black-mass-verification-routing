@@ -1,0 +1,53 @@
+{
+  "generated_utc": "2026-09-30T16:56:59.266506+00:00",
+  "inputs": [
+    {
+      "path": "D:\\MLWork\\topic34\\manuscript_quality_v2\\datasets\\ump_bev_flows_20260930_v1\\eu27_bev_lithium_battery_waste_2025_2050.csv",
+      "sha256": "a44c78a6f712ed69ec023547732d9b589c5d9875dbb6a6f4f96304ca72e32c10"
+    },
+    {
+      "path": "E:\\AcademicData\\topic34\\raw\\gisco\\NUTS_LB_2024_4326_LEVL_0_2026-09-26.geojson",
+      "sha256": "41408d517dd99ae18cc35ec481b16d9948da2044e0b7685b40084031ba55c201"
+    },
+    {
+      "path": "D:\\MLWork\\topic34\\datasets\\upgrade\\eu27_candidate_hub_nodes_2026-09-26.csv",
+      "sha256": "c8435444be778bb1eb56465328d7ad0ffdc8b14e89d6257a2a1cad3eff59f590"
+    },
+    {
+      "path": "F:\\AcademicData\\topic34\\raw\\OPARA-276_20260928\\verified_downloads_v2\\2_-_Black_mass_yield_and_relation_black_mass_share_to_coating_share.xlsx",
+      "sha256": "5ecef2118b1a74bbf4e715fe051556b16c8474b404c22843cdb6a8ea9efd55b0"
+    }
+  ],
+  "script_sha256": "bbe5f19b46685a9d1df3c971f19d444e322d3170af1d95f30fe8892c7e949412",
+  "official_definition": "PackXEV excludes cells and modules; composition model is cell-level (FutuRaM battery supporting document p.6,8)",
+  "base_conversion": {
+    "nmc_mass_share": 0.5,
+    "collection_fraction": 1.0,
+    "bm_yield": 0.2651296621666923
+  },
+  "yield_support": {
+    "minimum_reported_case": 0.058048625333581585,
+    "unweighted_case_median": 0.2651296621666923,
+    "maximum_reported_case": 0.3666962612120429
+  },
+  "yield_boundary": "Source-specific BM output <1000 micrometres after drying per original cell mass; case envelope, not EU/industrial mean",
+  "chemistry_boundary": "0.5 is a declared mass-share reference; FutuRaM assumes equal LFP/NMC shares, whose exact mass basis is not verified",
+  "geography": "27 national flows at official GISCO 2024 NUTS-0 label points; inventory city hubs; geodesic lower-bound geometry; not road logistics",
+  "annual_snapshots": [
+    2025,
+    2030,
+    2035,
+    2040,
+    2050
+  ],
+  "national_origin_count": 27,
+  "base_candidate_city_count": 17,
+  "claims_excluded": [
+    "observed waste generation",
+    "collected BM tonnage",
+    "EU chemistry prevalence",
+    "industrial BM yield",
+    "permitted route capacity",
+    "real investment feasibility"
+  ]
+}

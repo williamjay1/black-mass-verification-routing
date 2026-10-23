@@ -1,0 +1,25 @@
+{
+  "frozen_zero_premium_policy_plus_premium_model_usd": 315396473.70854515,
+  "frozen_capacity_tpy": 31000.0,
+  "joint_incumbent_model_usd": 312194763.19227713,
+  "joint_capacity_tpy": 24000.0,
+  "joint_primary_lower_bound_model_usd": 311600693.66726726,
+  "saving_vs_frozen_lower_bound_model_usd": 3201710.516268015,
+  "saving_vs_frozen_upper_bound_model_usd": 3795780.0412778854,
+  "saving_vs_optimized_all_hydro_model_usd": 4207390.700008094,
+  "source_high_pH_aggregate_TM_potential_g": 2.819537743279069,
+  "source_high_pH_aggregate_impurity_pct": 0.4996892728241757,
+  "pooled_nominal_increment_over_source_aggregate_pct": 1.0722806408079766,
+  "robust_10pct_selected_nominal_potential_g": 2.630335333685643,
+  "robust_10pct_minimum_potential_g": 2.3673018003170787,
+  "robust_recipe_phase_fractions": {
+    "AE 3.2 pH 5 Pr": 0.0,
+    "AE 3.2 pH 6 Pr": 0.0,
+    "AE 3.2 pH 7 Pr": 0.0,
+    "AE 3.2 pH 8 Pr": 0.9244327378987333,
+    "AE 3.2 pH 9 Pr": 1.0,
+    "AE 3.2 pH 11 Pr": 1.0
+  },
+  "if_all_target_surplus_removed_but_all_impurity_retained_source_metal_grade_pct": 0.658322704683433,
+  "interpretation": "Grade is pooled-inventory grade before conversion. Surplus disposition and impurity partition are unidentified. Potentials are not synthesized CAM."
+}

@@ -1,0 +1,14 @@
+quality_limit_pct,nominal_source_aggregate_impurity_pct,largest_admissible_relative_mass_interval,nominal_aggregate_admissible,method_role
+0.1,0.4996892728241757,,False,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.2,0.4996892728241757,,False,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.3,0.4996892728241757,,False,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.4,0.4996892728241757,,False,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.5,0.4996892728241757,0.0003123851977174509,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.6,0.4996892728241757,0.09171744450557523,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.64,0.4996892728241757,0.12380796158406346,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.65,0.4996892728241757,0.13148321072345712,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.7,0.4996892728241757,0.16794818326537275,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+0.8,0.4996892728241757,0.23249366362362786,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+1.0,0.4996892728241757,0.3358476490117311,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+2.0,0.4996892728241757,0.6050367776170306,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty
+5.0,0.4996892728241757,0.8257874609763023,True,fixed measured three-high-pH aggregate; rectangular mass envelope; not measured analytical uncertainty

@@ -1,0 +1,16 @@
+{
+  "source_sha256": "1b46736573973023021974021d011b85dab11f87aabe942aeaf42937b3df985b",
+  "script_sha256": "0036bffb0997974b6a2f5bd00a340ab8fb4a39bfbb62a6e8da88ab2404da8e39",
+  "optimization_count": 52,
+  "design_count": 104,
+  "mass_interval_status": "analyst relative intervals, not measured errors or confidence intervals",
+  "legacy_column_semantics": {
+    "tm_stoichiometric_CAM_upper_bound_g": "Nominal stoichiometric potential for delta=0; robust minimum stoichiometric potential for delta>0. Not a guaranteed manufactured yield or uniform upper bound over the mass box.",
+    "qualified_Ni_g": "Nominal Ni in selected grade-admissible inventory, not manufactured qualified NMC622.",
+    "qualified_Co_g": "Nominal Co in selected inventory.",
+    "qualified_Mn_g": "Nominal Mn in selected inventory."
+  },
+  "limitation": "Elemental mass blending only. No compatibility/reaction validation, battery performance, synthetic CAM yield, EU product output or environmental credit claimed.",
+  "source_phase_count": 6,
+  "nmc622_molar_mass_g_per_mol": 96.9282876
+}

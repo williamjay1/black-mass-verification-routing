@@ -1,0 +1,26 @@
+{
+  "article_doi": "10.1039/d6ra04652e",
+  "dataset_doi": "10.4121/58947ce2-c651-43cc-8e4d-760b2e60adfb",
+  "source_file_sha256": "78aac25c4ef318a3cfbedcf9fe5f965ee083ea551a7523b264f5c5e1f67cffe2",
+  "original_ods_sha256": "834a26bb3714c42744095346fff86081340672f1584a6f19414f0479e9b7f5c1",
+  "script_sha256": "989491752fd3777894dbf3ab5a8cef03620d73adb26c56a20b4e4cab499fbffe",
+  "article_online_date": "2026-08-18",
+  "raw_deposited_phase_count": 6,
+  "source_yield_denominator": "original metal in solids, corrected by220/500mL aliquot; original ODS A294:C294 formulas verified againstC97:E97andL160",
+  "original_feed_metals_g": {
+    "Co": 1.853919561386007,
+    "Ni": 4.857951009133634,
+    "Mn": 1.8678101872173445
+  },
+  "aliquot_fraction": 0.44,
+  "aliquot_equivalent_original_feed_metals_g": {
+    "Co": 0.8157246070098432,
+    "Ni": 2.137498444018799,
+    "Mn": 0.8218364823756316
+  },
+  "phase_7p98_impurity_pct": 0.6413360613067636,
+  "source_reported_weighted_impurity_pct": 0.4996892728241888,
+  "computed_high_phase_weighted_metal_impurity_pct": 0.499689272824189,
+  "rounding_warning": "Article rounds 0.641336% to0.6%; strict0.6% and rounded-label admission are different design rules. Neither is a universal battery-grade specification.",
+  "scope": "measured source purification products; no industrial scale-up, validated assay, EU prevalence, battery CAM qualification, or LCA credit inferred"
+}
