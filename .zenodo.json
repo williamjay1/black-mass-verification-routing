@@ -1,0 +1,36 @@
+{
+  "title": "Verification aware routing and finite lot capacity certification for black mass recycling",
+  "description": "<p>Public derived data, analysis code, saved solver outputs, campaign stress results, product qualification results, and vector figures for a verification aware routing and finite lot capacity study of battery black mass recycling.</p><p>The repository contains a frozen public API snapshot, derived network inputs, exported routing and capacity designs, finite lot reliability results, product grade and pooling results, and the code needed to reproduce the reported conditional boundaries. It does not contain third-party article PDFs, licensed commercial life cycle inventory, private plant data, or submission correspondence.</p><p>Code is released under the MIT License. Author generated derived data and figures are released under CC BY 4.0. Third-party source data retain their original terms; see DATA_PROVENANCE.md.</p>",
+  "creators": [
+    {
+      "name": "Wang, Siyu",
+      "affiliation": "Shanghai Academy of Global Governance & Area Studies, Shanghai International Studies University, Shanghai 201620, China",
+      "orcid": "0009-0006-0106-1018"
+    },
+    {
+      "name": "Zhang, Junjie",
+      "affiliation": "Shanghai Academy of Global Governance & Area Studies and School of Economics and Finance, Shanghai International Studies University, Shanghai 201620, China",
+      "orcid": "0009-0004-8821-4018"
+    }
+  ],
+  "keywords": [
+    "battery recycling",
+    "black mass",
+    "quality verification",
+    "finite lot capacity",
+    "reproducibility"
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "version": "1.0.0",
+  "publication_date": "2026-10-23",
+  "language": "eng",
+  "related_identifiers": [
+    {
+      "relation": "isSupplementTo",
+      "identifier": "https://github.com/williamjay1/black-mass-verification-routing",
+      "scheme": "url"
+    }
+  ]
+}
