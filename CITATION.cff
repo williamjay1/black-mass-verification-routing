@@ -3,10 +3,14 @@ message: "If you use this code or data, please cite the repository and the assoc
 title: "Verification aware routing and finite lot capacity certification for black mass recycling"
 type: software
 version: 1.0.0
-date-released: "2026-10-23"
+date-released: "2026-10-25"
 license: MIT
 repository-code: "https://github.com/williamjay1/black-mass-verification-routing"
-url: "https://github.com/williamjay1/black-mass-verification-routing"
+url: "https://doi.org/10.5281/zenodo.23637928"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23637928"
+    description: "Version 1.0.0 archive"
 abstract: "Public derived data, analysis code, saved solver outputs, campaign stress results, product qualification results, and vector figures for a verification aware routing and finite lot capacity study of battery black mass recycling."
 keywords:
   - battery recycling

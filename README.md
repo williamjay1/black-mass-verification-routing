@@ -1,5 +1,7 @@
 # Verification aware routing and finite lot capacity certification for black mass recycling
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23637928.svg)](https://doi.org/10.5281/zenodo.23637928)
+
 This repository is the public data and code package for the manuscript:
 
 > Wang, S.; Zhang, J. Verification aware routing and finite lot capacity certification for black mass recycling. 2026, invited submission.
@@ -81,18 +83,22 @@ The public source datasets are identified by persistent identifiers in the manus
 
 ## Citation
 
-Until a Zenodo DOI is assigned, cite the repository and the manuscript:
+Archived at Zenodo:
+
+- Version 1.0.0 DOI: https://doi.org/10.5281/zenodo.23637928
+- Concept DOI for all versions: https://doi.org/10.5281/zenodo.23637927
 
 ```text
 Wang, S.; Zhang, J. Verification aware routing and finite lot capacity certification
-for black mass recycling. GitHub repository, 2026.
-https://github.com/williamjay1/black-mass-verification-routing
+for black mass recycling. Version 1.0.0. Zenodo, 2026.
+https://doi.org/10.5281/zenodo.23637928
 ```
 
-A version DOI will be added here after the Zenodo import. The concept DOI should be used for all versions; the version DOI should be used for the exact released snapshot.
+Use the version DOI for the exact released snapshot and the concept DOI when referring to all versions.
 
 ## Contact
 
 Junjie Zhang, corresponding author: junjiezhang2024@shisu.edu.cn
 
 Siyu Wang: wangsiyu@shisu.edu.cn
+

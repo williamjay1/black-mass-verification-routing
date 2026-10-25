@@ -6,7 +6,7 @@ License text: https://creativecommons.org/licenses/by/4.0/legalcode
 
 Suggested attribution:
 
-> Wang, S.; Zhang, J. Verification aware routing and finite lot capacity certification for black mass recycling. GitHub repository, 2026. https://github.com/williamjay1/black-mass-verification-routing
+> Wang, S.; Zhang, J. Verification aware routing and finite lot capacity certification for black mass recycling. Version 1.0.0. Zenodo, 2026. https://doi.org/10.5281/zenodo.23637928
 
 This license applies only to the author generated derived data and figures. Third-party source data remain subject to their original terms. See `DATA_PROVENANCE.md` for the source register.
 
